@@ -1,0 +1,2 @@
+Word2Vec Model loaded
+Word2Vec Model loaded
