@@ -24,9 +24,11 @@ for instance in instance_file:
 		possible_class = ''
 		for i in range(0, len(array_1)-1):
 			c = (numpy.dot(array_1[i], v))/(numpy.linalg.norm(array_1[i])*numpy.linalg.norm(v))
+			print c
 			if min <= c:	
 				min = c
 				possible_class = array_1[-1][i]
+		print possible_class + " " + instance 
 		relevant_class = open(possible_class,"a") 
 		relevant_class.write(instance+"\n")
 
